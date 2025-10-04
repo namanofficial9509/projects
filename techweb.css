@@ -1,0 +1,668 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(tech6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    font-size: 25px;
+}
+
+.content{
+    height:30px;
+    width:screen;
+    background-color:turquoise;
+    align-content: center;
+    font-weight: 600;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px 1px black;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    border:2px solid black;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width:1000px) and (min-width:850px){
+    .content{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:850px) and (min-width:700px){
+    .content{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width:700px) and (min-width:590px){
+    .content{
+        font-size: 11px;
+    }
+    
+}
+
+@media screen and (max-width:590px) and (min-width:470px){
+    .content{
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width:470px) and (min-width:350px){
+    .content{
+        font-size: 7px;
+    }
+    
+}
+
+
+
+.content a{
+    margin:2px 8px;
+    padding: 2px 2px;
+    
+}
+
+
+
+#home{
+    position: absolute;
+    left:8%;
+    align-self: center;
+    font-size:1em;
+    border-radius: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+
+#home:hover{
+    background-color: azure;
+    border:1px solid grey;
+}
+
+#home:active{
+    background-color:lightcoral;
+}
+
+
+
+#aboutus{
+    position: absolute;
+    left:16%;
+    align-self: center;
+    font-size:1em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    
+}
+
+#aboutus:hover{
+    background-color: azure;
+    border:1px solid grey;
+}
+
+#aboutus:active{
+    background-color:lightcoral;
+}
+
+#laptops{
+    position: absolute;
+    left:27.5%;
+    align-self: center;
+    font-size:1em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+   
+}
+
+#laptops:hover{
+    background-color: azure;
+    border:1px solid grey;
+}
+
+#laptops:active{
+    background-color:lightcoral;
+}
+
+#smartphone{
+    position: absolute;
+    left:38%;
+    align-self: center;
+    font-size:1em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+
+}
+
+#smartphone:hover{
+    background-color: azure;
+    border:1px solid grey;
+}
+
+#smartphone:active{
+    background-color:lightcoral;
+}
+
+#search{
+    height:22px;
+    width:25.5%;
+    position: absolute;
+    left:68%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-self: center;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+
+#homesym{
+    position: relative;
+    left:2%;
+    font-size: 25px;
+    height: 90%;
+    width: 2.1%;
+    align-self: center;
+    margin-left: 2px;
+}
+#searchsym{
+    position:relative;
+    left:92%;
+    font-size: 18px;
+    align-self: center;
+    height: 88%;
+    width:fit-content;
+    margin:2px;
+    
+}
+
+/*website name */
+#headname{
+    height:95%;
+    margin:5px;
+    font-size: 8vw;
+    top:50px;
+    color:aliceblue;
+    background-color:transparent;
+    text-align:center;
+    width: 0; /* Start with no width */
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 3px solid black; /* Create the blinking cursor */
+    animation:heading-anim,typing 4s steps(22) forwards, blink .75s step-end infinite; 
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 98%; } /* Reveal the full text */
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; } /* Cursor off */
+  50% { border-color: black; } /* Cursor on */
+} 
+
+@keyframes heading-anim{
+
+    from{
+        text-shadow: 3px 3px 3px black;
+        color:aquamarine;
+    }
+
+    to{
+        text-shadow: 3px 3px 3px black;
+        color:aliceblue;
+    }
+}
+
+ul{
+    list-style-type: none;
+   
+}
+
+#sec1 #div1 ul li{
+    margin:5px;
+    color:crimson;
+    font-family:cursive;
+    font-weight: 800;
+    
+}
+
+#sec1 #div3 ul li{
+    margin:5px;
+    color:crimson;
+    font-family:cursive;
+    font-weight: 800;
+    
+}
+
+#foot ul li{
+    margin:15px;
+    color:darkslategray;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 548;
+}
+
+#foot ul li:hover{
+    color:chocolate;
+}
+
+#foot ul li:active{
+    color:red;
+}
+
+.top-elements{
+    width: 95%;
+    height: 70%;
+    background-color: darkgoldenrod;
+}
+
+#sec0{
+    height:8vh;
+    width:97vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow:visible;
+    margin:8px;
+}
+
+#sec1{
+    height:42vh;
+    width:97vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow:visible;
+
+}
+
+
+
+
+
+#head1{
+    font-weight: 600;
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5vw;
+    text-shadow: 3px 3px 3px red;
+    margin-left:11vw;
+    align-self: flex-end;
+
+}
+
+#head2{
+    font-weight: 600;
+    color:darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5vw;
+    text-shadow: 3px 3px 3px red;
+    margin-right:15vw;
+    align-self: flex-end;
+}
+
+.logo{
+    width:auto;
+    height:22vh;
+    align-self: center;
+}
+
+@media screen and (max-width:2560px) and (min-width:2360px){
+    .logo{
+        height:23vh;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width:2360px) and (min-width:2010px){
+    .logo{
+        height:23vh;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width:2010px) and (min-width:1800px){
+    .logo{
+        height:20vh;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width:1800px) and (min-width:1500px){
+    .logo{
+        height:17vh;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width:1500px) and (min-width:1200px){
+    .logo{
+        height:14vh;
+        align-self:flex-start;
+    }
+    
+}
+
+@media screen and (max-width:1200px) and (min-width:1000px){
+    .logo{
+        height:12vh;
+        align-self:flex-start;
+    }
+    
+}
+
+@media screen and (max-width:1000px) and (min-width:750px){
+    .logo{
+        height:10vh;
+        align-self:flex-start;
+    }
+    
+}
+
+@media screen and (max-width:750px) and (min-width:500px){
+    .logo{
+        height:8vh;
+        align-self:flex-start;
+    }
+    
+}
+
+@media screen and (max-width:500px) and (min-width:320px){
+    .logo{
+        height:6vh;
+        align-self:flex-start;
+    }
+    
+}
+
+
+
+
+#div1{
+   margin: 5px;
+   width: 22%;
+   height: 92%;
+   background-color:transparent;
+   font-size: 3vw;
+   align-self: flex-start;
+   text-shadow: 5px 5px 5px black;
+
+}
+
+
+
+#div3{
+    width: 22%;
+    height: 92%;
+    margin:5px;
+    background-color:transparent;
+    font-size: 3vw;
+    align-self: flex-start;
+    text-shadow: 5px 5px 5px black;
+
+}
+
+@media screen and (max-width:1000px) and (min-width:800px){
+    #sec1{
+        height:40vh;
+        
+    }
+    #sec0{
+        height: 8vh;
+    }
+    
+}
+
+@media screen and (max-width:800px) and (min-width:750px){
+    #sec1{
+        height:35vh;
+        
+    }
+
+    #sec0{
+        height: 7vh;
+    }
+    
+}
+
+@media screen and (max-width:750px) and (min-width:600px){
+    #sec1{
+        height:28vh;
+        
+    }
+
+    #sec0{
+        height: 6vh;
+    }
+    
+}
+
+@media screen and (max-width:600px) and (min-width:500px){
+    #sec1{
+        height:26vh;
+        
+    }
+
+    #sec0{
+        height: 5vh;
+    }
+    
+}
+
+@media screen and (max-width:500px) and (min-width:450px){
+    #sec1{
+        height:23vh;
+        
+    }
+
+    #sec0{
+        height: 5vh;
+    }
+    
+}
+
+@media screen and (max-width:450px) and (min-width:400px){
+    #sec1{
+        height:20vh;
+        
+    }
+
+    #sec0{
+        height: 5vh;
+    }
+    
+}
+
+@media screen and (max-width:400px) and (min-width:350px){
+    #sec1{
+        height:18vh;
+        
+    }
+
+    #sec0{
+        height: 5vh;
+    }
+    
+}
+
+
+/*first block of article*/
+
+
+
+#art1{
+    color:chartreuse;
+    font-size: 3vw;
+    font-family:'Times New Roman', Times, serif;
+    width:90vw;
+    text-shadow: 3px 3px 3px black;
+}
+
+#art2{
+    color:chartreuse;
+    font-size: 3vw;
+    font-family:'Times New Roman', Times, serif;
+    width:90vw;
+    text-shadow: 3px 3px 3px black;
+}
+
+#art3{
+    color:chartreuse;
+    font-size: 3vw;
+    font-family:'Times New Roman', Times, serif;
+    width:90vw;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+
+h3{
+    font-size:2.5vw;
+    color:gold;
+    text-decoration:underline;
+    text-decoration-style: solid;
+    text-decoration-color: saddlebrown;
+    text-decoration-thickness: 3px;
+    text-shadow: 3px 3px 3px black;
+}
+
+/*----footer of home page----*/
+
+
+input::placeholder{
+    text-align: center;
+    font-size:x-large;
+}
+
+#comment{
+    position: relative;
+    left:35vw;
+    width:30vw;
+    height:50px;
+    border: 4px solid darkblue;
+    border-radius: 12px;
+}
+#foot{
+    height:fit-content;
+    width:88vw;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 20px;
+    position: relative;
+    left:5vw;
+    background-color: lightcyan;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    
+}
+
+
+
+#list1{
+    height:fit-content;
+    width:33%;
+    font-size: 2em;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+    
+}
+
+#list2{
+    height:fit-content;
+    width:33%;
+    font-size: 2em;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+    
+}
+
+#list3{
+    height:fit-content;
+    width:33%;
+    font-size: 2em;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+    
+}
+
+#last{
+    background-color: black;
+    color:blanchedalmond;
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    height: fit-content;
+    margin-left:10px;
+    width:97vw;
+}
+
+@media screen and (max-width:650px) and (min-width:500px){
+   #comment{
+    height:30px;
+   }
+   
+   input::placeholder{
+    text-align: center;
+    font-size:larger;
+}
+
+    
+}
+
+@media screen and (max-width:500px) and (min-width:400px){
+   #comment{
+    height:30px;
+   }
+   
+   input::placeholder{
+    text-align: center;
+    font-size:15px;
+}
+
+}
+
+@media screen and (max-width:400px) and (min-width:300px){
+   #comment{
+    height:30px;
+    width:40vw;
+    left:32vw;
+   }
+   
+   input::placeholder{
+    text-align: center;
+    font-size:13px;
+}
+    
+}
+
